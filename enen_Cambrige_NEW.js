@@ -52,7 +52,7 @@ class enen_Cambridge {
         for (const entry of entries) {
             let definitions = [];
             let audios = [];
-            let extraInfo = = T(entry.querySelector('.headword'));
+            let extrainfo = = T(entry.querySelector('.headword'));
             let expression = T(entry.querySelector('.headword'));
             let reading = '';
             let readings = entry.querySelectorAll('.pron .ipa');
@@ -117,6 +117,7 @@ class enen_Cambridge {
                 css,
                 expression,
                 reading,
+                extrainfo,
                 definitions,
                 audios
             });
