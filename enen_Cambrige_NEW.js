@@ -38,6 +38,7 @@ class enen_Cambridge {
 
         let base = 'https://dictionary.cambridge.org/search/english/direct/?q=';
         let url = base + encodeURIComponent(word);
+        let extrainfo = base + encodeURIComponent(word);
         let doc = '';
         try {
             let data = await api.fetch(url);
@@ -51,7 +52,7 @@ class enen_Cambridge {
         for (const entry of entries) {
             let definitions = [];
             let audios = [];
-let extrainfo = word;
+
             let expression = T(entry.querySelector('.headword'));
             let reading = '';
             let readings = entry.querySelectorAll('.pron .ipa');
