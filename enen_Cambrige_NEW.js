@@ -68,7 +68,7 @@ class enen_Cambridge {
             audios[1] = entry.querySelector(".us.dpron-i source");
             audios[1] = audios[1] ? 'https://dictionary.cambridge.org' + audios[1].getAttribute('src') : '';
             //audios[1] = audios[1].replace('https', 'http');
-            let extrainfo = T(readings[0]);
+
             let sensbodys = entry.querySelectorAll('.sense-body') || [];
             for (const sensbody of sensbodys) {
                 let sensblocks = sensbody.childNodes || [];
@@ -116,7 +116,6 @@ class enen_Cambridge {
                 css,
                 expression,
                 reading,
-                extrainfo,
                 definitions,
                 audios
             });
