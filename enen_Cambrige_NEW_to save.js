@@ -71,7 +71,7 @@ class enen_Cambridge {
 
             
         let extrainfo =  '';
-            let extrainfos = entry.querySelector(".uk.dpron-i source .us.dpron-i source";
+            let extrainfos = entry.querySelectorAll('.uk.dpron-i source .us.dpron-i source');
           if (extrainfos) {
                 let audio_uk = T(extrainfo[0]);
                 let audio_us = T(extrainfo[1]);
