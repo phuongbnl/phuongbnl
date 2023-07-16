@@ -38,7 +38,7 @@ class enen_Cambridge {
 
         let base = 'https://dictionary.cambridge.org/search/english/direct/?q=';
         let url = base + encodeURIComponent(word);
-        let extrainfo = base + encodeURIComponent(word);
+        let extraInfo = base + encodeURIComponent(word);
         let doc = '';
         try {
             let data = await api.fetch(url);
