@@ -114,8 +114,7 @@ class enen_Cambridge {
                 css,
                 expression,
                 reading,
-		extrainfos
-                definitions,
+		                definitions,
                 audios
             });
         }
