@@ -52,7 +52,7 @@ class enen_Cambridge {
         for (const entry of entries) {
             let definitions = [];
             let audios = [];
-            let url = [];
+            let urls = [];
             let expression = T(entry.querySelector('.headword'));
             let reading = '';
             let readings = entry.querySelectorAll('.pron .ipa');
@@ -66,9 +66,9 @@ class enen_Cambridge {
             audios[0] = entry.querySelector(".uk.dpron-i source");
             audios[0] = audios[0] ? 'https://dictionary.cambridge.org' + audios[0].getAttribute('src') : '';
             //audios[0] = audios[0].replace('https', 'http');
-            url[0] = entry.querySelector(".us.dpron-i source");
-            url[0] = url[0] ? 'https://dictionary.cambridge.org' + url[0].getAttribute('src') : '';
-            //audios[1] = audios[1].replace('https', 'http');
+            urls[0] = entry.querySelector(".us.dpron-i source");
+            urls[0] = urls[0] ? 'https://dictionary.cambridge.org' + urls[0].getAttribute('src') : '';
+            //urls[0] = urls[0].replace('https', 'http');
 
             let sensbodys = entry.querySelectorAll('.sense-body') || [];
             for (const sensbody of sensbodys) {
