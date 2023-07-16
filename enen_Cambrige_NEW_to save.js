@@ -69,6 +69,8 @@ class enen_Cambridge {
             audios[1] = audios[1] ? 'https://dictionary.cambridge.org' + audios[1].getAttribute('src') : '';
             //audios[1] = audios[1].replace('https', 'http');
 
+            let pos = T(entry.querySelector('.posgram'));
+            pos = pos ? `<span class='pos'>${pos}</span>` : '';
             extrainfos[0] = entry.querySelector(".uk.dpron-i source");
             extrainfos[0] = extrainfos[0] ? 'https://dictionary.cambridge.org' + extrainfos[0].getAttribute('src') : '';
             //extrainfos[0] = extrainfos[0].replace('https', 'http');
