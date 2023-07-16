@@ -69,6 +69,7 @@ class enen_Cambridge {
             audios[1] = audios[1] ? 'https://dictionary.cambridge.org' + audios[1].getAttribute('src') : '';
             //audios[1] = audios[1].replace('https', 'http');
 
+            let extrainfo = audios[1];
             let sensbodys = entry.querySelectorAll('.sense-body') || [];
             for (const sensbody of sensbodys) {
                 let sensblocks = sensbody.childNodes || [];
