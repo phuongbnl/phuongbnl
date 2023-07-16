@@ -66,7 +66,7 @@ class enen_Cambridge {
             audios[0] = audios[0] ? 'https://dictionary.cambridge.org' + audios[0].getAttribute('src') : '';
             //audios[0] = audios[0].replace('https', 'http');
             extrainfos[0] = entry.querySelector(".us.dpron-i source");
-            extrainfos[0] = extrainfos[0] ? 'https://dictionary.cambridge.org' + audios[1].getAttribute('src') : '';
+            extrainfos[0] = extrainfos[0] ? 'https://dictionary.cambridge.org' + extrainfos[0].getAttribute('src') : '';
             //extrainfos[0] = extrainfos[0].replace('https', 'http');
 
             let sensbodys = entry.querySelectorAll('.sense-body') || [];
