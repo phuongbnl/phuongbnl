@@ -51,7 +51,8 @@ class enen_Cambridge {
         for (const entry of entries) {
             let definitions = [];
             let audios = [];
-	    let expression = T(entry.querySelector('.headword'));
+
+            let expression = T(entry.querySelector('.headword'));
             let reading = '';
             let readings = entry.querySelectorAll('.pron .ipa');
             if (readings) {
@@ -64,7 +65,6 @@ class enen_Cambridge {
             audios[0] = entry.querySelector(".uk.dpron-i source");
             audios[0] = audios[0] ? 'https://dictionary.cambridge.org' + audios[0].getAttribute('src') : '';
             //audios[0] = audios[0].replace('https', 'http');
-
             audios[1] = entry.querySelector(".us.dpron-i source");
             audios[1] = audios[1] ? 'https://dictionary.cambridge.org' + audios[1].getAttribute('src') : '';
             //audios[1] = audios[1].replace('https', 'http');
@@ -116,7 +116,8 @@ class enen_Cambridge {
                 css,
                 expression,
                 reading,
-		definitions,
+		extrainfo,
+                definitions,
                 audios
             });
         }
