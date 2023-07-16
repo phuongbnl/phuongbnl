@@ -100,7 +100,7 @@ class enen_Cambridge {
                         if (examps.length > 0 && this.maxexample > 0) {
                             definition += '<ul class="sents">';
                             for (const [index, examp] of examps.entries()) {
-                                if (index > this.maxexample) break; // to control only 2 example sentence. 
+                                if (index > this.maxexample+3) break; // to control only 2 example sentence. 
                                 let eng_examp = T(examp.querySelector('.eg'));
                                 let chn_examp = T(examp.querySelector('.trans'));
                                 definition += `<li class='sent'><span class='eng_sent'>${eng_examp.replace(RegExp(expression, 'gi'),`<b>${expression}</b>`)}</span><span class='chn_sent'>${chn_examp}</span></li>`;
